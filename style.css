@@ -19,12 +19,15 @@ nav {
 .topNav {
     height: 45px;
     position: relative;
+    border-bottom: rgb(192, 192, 192) solid 1px;
 }
+
 .topRightNav img{
     vertical-align: middle;
     align-self: center;
     padding-right: 15px;
 }
+
 .contact {
     float: left;
     display: inline-flex;
@@ -48,11 +51,18 @@ nav {
 }
 .bottomNav {
     height: 70px;
-    border-top: rgb(192, 192, 192) solid 1px;
     padding-left: 50px;
     padding-right: 50px;
 }
-
+.bottomNav label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+}
+#toggle{
+    display: none;
+}
 .menu a {
     color: black;
     padding: 10px 20px;
@@ -329,4 +339,63 @@ nav {
     flex-wrap: wrap;
     align-self: center;
     padding: 3rem 0rem;
+}
+
+
+.hireUsNow{
+    justify-content: center;
+    background-color: black;
+}
+.hireUsNow a{
+    align-content: center;
+    text-decoration: none;
+    left: 10%;
+    font-size: 13px;
+    border: black solid 4px;
+    text-align: center;
+}
+@media (max-width: 820px){
+    #menuIcon{
+        float: right;
+        display: block;
+        cursor: pointer;
+    }
+    .bannerTitle{
+        top: 25%;
+        left: 2%;
+        font-size: 30px;
+    }
+    .topNav{
+        display: none;
+    }
+    .bottomNav .menu{
+        position: relative;
+        text-align: center;
+        width: 100%;
+        display: none;
+        height: 200px;
+    }
+    .bottomNav .menu a{
+        display: block;
+        flex-direction: column;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+    }
+    .bottomNav{
+        padding-right: 0px;
+    }
+    .leadBanner img{
+        height: 300px;
+    }
+    #toggle:checked + .menu{
+        position: relative;
+        display: block;
+    }
+
+}
+@media (min-width: 820px){
+    .hireUsNow a{
+        display: none;
+    }
+
 }
