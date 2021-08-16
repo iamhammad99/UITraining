@@ -360,11 +360,11 @@ nav {
     margin-bottom: 1rem;
 }
 .newsLetter{
-    padding: 0 2rem;
+    padding-left:2rem;
 }
 #footerEmail {
     text-align: center;
-    width: 300px;
+    width: 24rem;
     height: 40px;
     border-radius: 3rem;
     outline: none;
@@ -404,7 +404,7 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     align-self: center;
-    padding: 3rem 0rem;
+    padding: 3rem 0;
 }
 
 
@@ -464,8 +464,8 @@ nav {
 }
 
 .promotions {
-    padding: 10px;
-    display: blocks;
+    padding-top: 10px;
+    display: block;
     text-align: center;
     background-color: rgb(51, 51, 51);
     font-size: 40px;
@@ -518,16 +518,6 @@ nav {
     font-size: 70px;
 
 }
-
-
-
-
-
-
-
-
-
-
 
 .circleContent {
     font-size: 70px;
@@ -585,7 +575,7 @@ nav {
 
     #toggle:checked+.menu {
         position: relative;
-        display: block;
+        display: none;
     }
 
     .newsRow,
@@ -635,7 +625,11 @@ nav {
         display: none;
     }
 }
-
+@media(max-width: 400px){
+    #footerEmail{
+        width: 15rem;
+    }
+}
 @media (max-width: 1000px) {
     .blogPost1 {
         display: none;
@@ -649,16 +643,16 @@ nav {
 
     .topFooter {
         display: block;
-        margin: 0 auto;
+        margin-left: 1rem;
     }
 
     .footerHeading {
-        padding: 0rem;
-        width: 100%;
+        padding: 0;
+        width: 99%;
         align-content: center;
-        margin-left: 20px;
+        padding-left: 0;
     }
     .instaGrid{
-        width: 40rem;
+        width: 100%;
     }
 }
