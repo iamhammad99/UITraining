@@ -4,10 +4,6 @@
     font-size: 14px;
 }
 
-body {
-    width: 99%;
-    height: 100vh;
-}
 
 nav {
     display: flex;
