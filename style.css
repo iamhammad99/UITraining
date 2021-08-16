@@ -47,7 +47,7 @@ nav {
 .contact a:hover {
     cursor: pointer;
     background-color: white;
-    color: blue;
+    color: rgb(78, 78, 247);
     transition: 0.3s ease-out;
 }
 
@@ -76,7 +76,7 @@ nav {
 .menu a:hover {
     cursor: pointer;
     background-color: white;
-    color: blue;
+    color: rgb(78, 78, 247);
     transition: 0.3s ease-out;
 }
 
@@ -95,7 +95,7 @@ nav {
 .getFreeQuote a:hover {
     cursor: pointer;
     background-color: white;
-    color: blue;
+    color: blurgb(78, 78, 247)e;
     transition: 0.3s ease-out;
 }
 
@@ -109,6 +109,8 @@ nav {
 }
 
 .leadBanner {
+    width: 100%;
+    background-size: cover;
     max-height: 650px;
     overflow: hidden;
     position: relative;
@@ -131,13 +133,22 @@ nav {
 .bannerTitle {
     position: absolute;
     left: 5%;
-    top: 30%;
+    top: 25%;
     width: 30%;
-    color: #fff;
-    font-size: 60px;
     padding-left: 40px;
 }
+.bannerTitle h1{
 
+    color: #fff;
+    font-size: 60px;
+}
+#hireUsNowSubmit{
+    width: 10rem;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(78, 78, 247);
+}
 .leadBanner a {
     position: absolute;
     left: 5%;
@@ -233,7 +244,7 @@ nav {
 }
 
 .gridNav a:hover {
-    color: blue;
+    color: rgb(78, 78, 247);
     transition: 0.3s ease-out;
 }
 
@@ -331,7 +342,7 @@ nav {
 }
 
 .footerHeading a:hover {
-    color: blue;
+    color: rgb(78, 78, 247);
     transition: 0.3s ease-out;
 }
 
@@ -386,16 +397,15 @@ nav {
 
 
 .hireUsNow {
+    position: absolute;
     justify-content: center;
-    background-color: black;
 }
 
-.hireUsNow a {
+#hireUsNowSubmit {
     align-content: center;
     text-decoration: none;
     left: 10%;
     font-size: 13px;
-    border: black solid 4px;
     text-align: center;
 }
 
@@ -481,10 +491,10 @@ nav {
         cursor: pointer;
     }
 
-    .bannerTitle {
+    .bannerTitle h1{
         top: 25%;
         left: 2%;
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .topNav {
@@ -558,7 +568,7 @@ nav {
 }
 
 @media (min-width: 820px) {
-    .hireUsNow a {
+    #hireUsNowSubmit {
         display: none;
     }
 
