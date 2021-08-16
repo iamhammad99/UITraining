@@ -268,14 +268,17 @@ nav {
     display: flex;
     flex-direction: row;
     margin: 5rem;
-    justify-content: center;
     align-items: center;
     background-color: white;
-    align-items: center;
     width: 100%;
     max-width: 40rem;
 }
-
+.bottombannerItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
 .blogPostImg {
     flex: 1;
     padding: 2rem 2rem 2rem 0rem;
